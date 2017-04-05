@@ -51,6 +51,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ARApexClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ARApexClass1</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -59,33 +63,23 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ARApexClass3</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ARApexClass4</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ARApexClass5</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ARSFApexClass1</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ARSFApexClass2</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ARSFApexClass4</apexClass>
+        <apexClass>TAFApexClass</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
-        <field>AR_AccountObject6__c.Ar_AccountField6__c</field>
+        <field>AR_CustomObject1__c.AR_CustomField1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AR_CustomObject1__c.AR_Custom_Field3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.AR_Custom_Field3_Accounts__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -107,11 +101,6 @@
         <editable>true</editable>
         <field>Account.AnnualRevenue</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.AutorabitExtId__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -301,7 +290,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Asset.ProductCode</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -875,6 +864,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Lead.AutorabitExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead.CleanStatus</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1007,11 +1001,6 @@
         <editable>true</editable>
         <field>Opportunity.Amount</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.AutorabitExtId__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1249,6 +1238,21 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Pricebook2.AutorabitExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PricebookEntry.AutorabitExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product2.AutorabitExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Product2.Description</field>
         <readable>true</readable>
@@ -1329,22 +1333,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
-        <layout>AR_AccObj1__c-AR-AccObj1 Layout</layout>
+        <layout>AR_CustomObject1__c-AR-CustomObject1 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AR_AccObj2__c-AR-AccObj2 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AR_AccObj3__c-AR-AccObj3 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AR_AccountObj2__c-AR-AccountObj2 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AR_AccountObject3__c-AR-AccountObject3 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AR_AccountObject6__c-AR-AccountObject6 Layout</layout>
+        <layout>AR_Custom_object2__c-AR-Custom object2 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
@@ -1372,6 +1364,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Survey__c-Customer Survey Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>DandBCompany-D%26B Company Layout</layout>
@@ -1637,10 +1632,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-Event</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Idea</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -1679,10 +1670,6 @@
     <tabVisibilities>
         <tab>standard-StreamingChannel</tab>
         <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Task</tab>
-        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-UserProvisioningRequest</tab>

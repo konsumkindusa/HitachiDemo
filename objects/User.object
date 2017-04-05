@@ -86,12 +86,6 @@
     </listViews>
     <listViews>
         <fullName>AllUsers</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.EMAIL</columns>
-        <columns>CORE.USERS.ACTIVE</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.PROFILE.NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All Users</label>
     </listViews>

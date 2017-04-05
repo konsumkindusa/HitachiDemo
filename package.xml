@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>ARApexClass</members>
         <members>ARApexClass1</members>
         <members>ARApexClass2</members>
-        <members>ARApexClass3</members>
-        <members>ARApexClass4</members>
-        <members>ARApexClass5</members>
-        <members>ARSFApexClass1</members>
-        <members>ARSFApexClass2</members>
-        <members>ARSFApexClass4</members>
+        <members>TAFApexClass</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountTrigger</members>
+        <members>HandlingMirrorOpportunity</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>AppSwitcher</members>
@@ -53,9 +54,10 @@
         <name>CustomApplication</name>
     </types>
     <types>
-        <members>AR_AccountObject6__c.Ar_AccountField6__c</members>
+        <members>AR_CustomObject1__c.AR_CustomField1__c</members>
+        <members>AR_CustomObject1__c.AR_Custom_Field3__c</members>
+        <members>Account.AR_Custom_Field3_Accounts__c</members>
         <members>Account.Active__c</members>
-        <members>Account.AutorabitExtId__c</members>
         <members>Account.CustomerPriority__c</members>
         <members>Account.NumberofLocations__c</members>
         <members>Account.SLAExpirationDate__c</members>
@@ -69,18 +71,21 @@
         <members>Contact.Languages__c</members>
         <members>Contact.Level__c</members>
         <members>Goal.OrigGoalId__c</members>
+        <members>Lead.AutorabitExtId__c</members>
         <members>Lead.CurrentGenerators__c</members>
         <members>Lead.NumberofLocations__c</members>
         <members>Lead.Primary__c</members>
         <members>Lead.ProductInterest__c</members>
         <members>Lead.SICCode__c</members>
         <members>Metric.OrigMetricId__c</members>
-        <members>Opportunity.AutorabitExtId__c</members>
         <members>Opportunity.CurrentGenerators__c</members>
         <members>Opportunity.DeliveryInstallationStatus__c</members>
         <members>Opportunity.MainCompetitors__c</members>
         <members>Opportunity.OrderNumber__c</members>
         <members>Opportunity.TrackingNumber__c</members>
+        <members>Pricebook2.AutorabitExtId__c</members>
+        <members>PricebookEntry.AutorabitExtId__c</members>
+        <members>Product2.AutorabitExtId__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -88,12 +93,8 @@
         <name>CustomLabels</name>
     </types>
     <types>
-        <members>AR_AccObj1__c</members>
-        <members>AR_AccObj2__c</members>
-        <members>AR_AccObj3__c</members>
-        <members>AR_AccountObj2__c</members>
-        <members>AR_AccountObject3__c</members>
-        <members>AR_AccountObject6__c</members>
+        <members>AR_CustomObject1__c</members>
+        <members>AR_Custom_object2__c</members>
         <members>Account</members>
         <members>AccountCleanInfo</members>
         <members>AccountContactRole</members>
@@ -109,6 +110,7 @@
         <members>ContentVersion</members>
         <members>Contract</members>
         <members>ContractContactRole</members>
+        <members>Customer_Survey__c</members>
         <members>DandBCompany</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
@@ -143,19 +145,10 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>AR_AccObj1__c-en_US</members>
-        <members>AR_AccObj2__c-en_US</members>
-        <members>AR_AccObj3__c-en_US</members>
-        <members>AR_AccountObj2__c-en_US</members>
-        <members>AR_AccountObject3__c-en_US</members>
-        <members>AR_AccountObject6__c-en_US</members>
+        <members>AR_CustomObject1__c-en_US</members>
+        <members>AR_Custom_object2__c-en_US</members>
+        <members>Customer_Survey__c-en_US</members>
         <name>CustomObjectTranslation</name>
-    </types>
-    <types>
-        <members>Account.Standard_Account_duplicate_rule</members>
-        <members>Contact.Standard_Contact_duplicate_rule</members>
-        <members>Lead.Standard_Lead_duplicate_rule</members>
-        <name>DuplicateRule</name>
     </types>
     <types>
         <members>unfiled$public</members>
@@ -174,12 +167,8 @@
         <name>HomePageLayout</name>
     </types>
     <types>
-        <members>AR_AccObj1__c-AR-AccObj1 Layout</members>
-        <members>AR_AccObj2__c-AR-AccObj2 Layout</members>
-        <members>AR_AccObj3__c-AR-AccObj3 Layout</members>
-        <members>AR_AccountObj2__c-AR-AccountObj2 Layout</members>
-        <members>AR_AccountObject3__c-AR-AccountObject3 Layout</members>
-        <members>AR_AccountObject6__c-AR-AccountObject6 Layout</members>
+        <members>AR_CustomObject1__c-AR-CustomObject1 Layout</members>
+        <members>AR_Custom_object2__c-AR-Custom object2 Layout</members>
         <members>Account-Account %28Marketing%29 Layout</members>
         <members>Account-Account %28Sales%29 Layout</members>
         <members>Account-Account %28Support%29 Layout</members>
@@ -198,6 +187,7 @@
         <members>Contact-Contact Layout</members>
         <members>ContentVersion-Content Version Layout</members>
         <members>Contract-Contract Layout</members>
+        <members>Customer_Survey__c-Customer Survey Layout</members>
         <members>DandBCompany-D%26B Company Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>Event-Event Layout</members>
@@ -327,6 +317,7 @@
         <members>Partner Community Login User</members>
         <members>Partner Community User</members>
         <members>PlatformPortal</members>
+        <members>Playground Admin</members>
         <members>ReadOnly</members>
         <members>Silver Partner User</members>
         <members>SolutionManager</members>
